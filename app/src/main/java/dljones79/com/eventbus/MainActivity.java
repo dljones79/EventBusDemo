@@ -6,15 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static final String API_KEY = BuildConfig.API_KEY;
-
+    
     private Button mLoginButton;
     private Button mSecondActivityButton;
     private EditText mUserName;
@@ -25,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Log.i("API_KEY: ", API_KEY);
 
         mLoginButton = (Button) findViewById(R.id.login_btn);
         mSecondActivityButton = (Button) findViewById(R.id.second_activity_btn);
