@@ -7,4 +7,7 @@
 /build
 /captures
 .externalNativeBuild
-/.gradle.properties
+**/.gradle.properties
+.idea/copyright/
+app/libs/
+app/src/main/res/drawable/
